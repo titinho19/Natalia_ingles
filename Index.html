@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game: Aprende palabras en inglés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Natalia aprende palabras en inglés</h1>
+    <div id="question">
+        <h2 id="question-word"></h2>
+        <p id="question-context"></p>
+        <div id="options">
+            <button class="option-btn" onclick="checkAnswer(this.textContent)"></button>
+            <button class="option-btn" onclick="checkAnswer(this.textContent)"></button>
+            <button class="option-btn" onclick="checkAnswer(this.textContent)"></button>
+            <button class="option-btn" onclick="checkAnswer(this.textContent)"></button>
+            <button class="option-btn" onclick="checkAnswer(this.textContent)"></button>
+        </div>
+        <div id="feedback"></div>
+    </div>
+
+    <div id="controls" style="display: none;">
+        <button onclick="nextQuestion()">Siguiente pregunta</button>
+    </div>
+
+    <div id="results" style="display: none;">
+        <h2>Resultados</h2>
+        <p>Puntuación: <span id="score"></span> / <span id="total"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
